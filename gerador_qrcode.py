@@ -6,8 +6,8 @@ class Tela:
     def __init__(self) :
         layout = [
             [sg.Text('Link', size=(4,0),  font=("Arial", 14)), sg.Input(size=(55,0),  font=("Arial", 12) , key='_LINK_')],  
-            [sg.Text('Deseja salvar a imagem onde?',  font=("Arial", 12))],
-            [ sg.FolderBrowse('Pesquisar',  font=("Arial", 12) , key='_BUSCAR_', button_color=('White', 'Gray')),sg.Input(size=(51,0), font=("Arial", 12))],   
+            [sg.Text('Onde deseja salvar a imagem?',  font=("Arial", 12))],
+            [ sg.FolderBrowse('Buscar',  font=("Arial", 12) , key='_BUSCAR_', button_color=('White', 'Gray')),sg.Input(size=(51,0), font=("Arial", 12))],   
             [sg.Button('Criar QR Code',  font=("Arial", 12) , button_color=('White', 'Green'))]
         ]
         self.janela = sg.Window("Gerador de codigo QR").layout(layout)
